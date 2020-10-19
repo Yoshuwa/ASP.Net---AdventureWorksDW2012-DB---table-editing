@@ -1,0 +1,72 @@
+<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="Site.master.cs" Inherits="AdventureWorksDW2012.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="default-bg">
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    AdventureWorksDW2012
+                </h1>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl= "~/Presentation/Default.aspx" Text="Home"/>
+                        <asp:MenuItem Text="Master">
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_AdventureWorksDWBuildVersion.aspx" Text="dbo.AdventureWorksDWBuildVersion" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimAccount.aspx" Text="dbo.DimAccount" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimCurrency.aspx" Text="dbo.DimCurrency" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimCustomer.aspx" Text="dbo.DimCustomer" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimDate.aspx" Text="dbo.DimDate" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimDepartmentGroup.aspx" Text="dbo.DimDepartmentGroup" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimEmployee.aspx" Text="dbo.DimEmployee" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimGeography.aspx" Text="dbo.DimGeography" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimOrganization.aspx" Text="dbo.DimOrganization" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimProduct.aspx" Text="dbo.DimProduct" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimProductCategory.aspx" Text="dbo.DimProductCategory" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimProductSubcategory.aspx" Text="dbo.DimProductSubcategory" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimPromotion.aspx" Text="dbo.DimPromotion" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimReseller.aspx" Text="dbo.DimReseller" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimSalesReason.aspx" Text="dbo.DimSalesReason" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimSalesTerritory.aspx" Text="dbo.DimSalesTerritory" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_DimScenario.aspx" Text="dbo.DimScenario" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactAdditionalInternationalProductDescription.aspx" Text="dbo.FactAdditionalInternationalProductDescription" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactCallCenter.aspx" Text="dbo.FactCallCenter" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactCurrencyRate.aspx" Text="dbo.FactCurrencyRate" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactFinance.aspx" Text="dbo.FactFinance" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactInternetSales.aspx" Text="dbo.FactInternetSales" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactInternetSalesReason.aspx" Text="dbo.FactInternetSalesReason" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactProductInventory.aspx" Text="dbo.FactProductInventory" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactResellerSales.aspx" Text="dbo.FactResellerSales" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactSalesQuota.aspx" Text="dbo.FactSalesQuota" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_FactSurveyResponse.aspx" Text="dbo.FactSurveyResponse" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_NewFactCurrencyRate.aspx" Text="dbo.NewFactCurrencyRate" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentation/frmdbo_ProspectiveBuyer.aspx" Text="dbo.ProspectiveBuyer" ></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentation/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
+ 
